@@ -1,1 +1,242 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*general rules*/
+*{
+    box-sizing:border-box;
+    max-width: 100%;
+}
+html{
+    font-size: 62.5%;
+    /* max-width: 800px; */
+}
+body{
+    font-size:1.6rem;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    width: 36%;
+    padding-left:3.1rem;
+    font-family: sans-serif;
+    color: honeydew;
+}
+section{
+    padding:4%;
+}
+/* header section*/
+header{
+    background-color:#778899;
+}
+nav {
+    display: flex;
+    justify-content:left;
+    justify-content:space-evenly;
+    font-size: 2.5rem;
+    font-family: monospace;
+    width:36%;
+    padding:1rem;
+    
+}
+.img-cont {
+    width:50%;
+}
+a{
+    color: honeydew;
+}
+.main {
+    width:100%;
+    display:flex;
+
+}
+.info{
+    justify-content: space-around;
+    padding-right:5%;
+    padding-left:5%;
+    display:flex;
+    flex-direction: column;
+   width:50%;
+    align-items:left;
+}
+h2{
+    font-size: 3rem;
+    width:40%
+}
+.b1{
+    background-color:#F0FFF0;
+    text-align: center;
+    font-size:2.1rem;
+    font-weight: bold;
+    padding:3%;
+    width:50%;
+    align-self: center left;
+}
+p{
+    font-family:Arial;
+}
+span{
+    font-weight: bold;
+}
+.gallery1{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+
+}
+.gallery1 div p{
+    text-align: center;
+}
+.b2{
+    background-color:#F0FFF0;
+    text-align: center;
+    font-size:2.1rem;
+    font-weight: bold;
+    padding:1%;
+}
+h3{
+    font-weight: bold;
+}
+footer{
+    background-color:#778899;
+    width: 100%;
+    display:flex;
+    align-items:center;
+   flex-direction: column;
+}
+
+.picpair {
+    display: flex;
+}
+
+.picpair div {
+    margin: 1%;
+}
+
+/*mobile*/
+@media(max-width:500px) {
+    
+    nav, h1, .a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width:100%;
+    }
+    h1{
+        text-align: center;
+        padding-left: 0rem;
+    }
+    h2{
+        text-align: center;
+    }
+    .main, .info, h2, p{
+        display: flex;
+        flex-wrap:nowrap;
+        min-width: 400px;
+    }
+    .img-cont{
+        width:400px;
+
+    }
+    .b1{
+        text-align: center;
+        display: flex;
+        max-width: 38%;
+        align-items: center;
+    }
+
+    p{
+        max-width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .gallery1{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+   }
+@media(max-width:800px) {
+    nav, h1, .a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width:100%;
+    }
+    h2{
+        text-align: center;
+    }
+    .main, .info, h2, p {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        flex-wrap:wrap;
+        min-width:100%;
+    }
+   
+    p{
+        padding-top: 2rem;
+        max-width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .gallery1{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    h1{
+        text-align: center;
+        padding-left: 0rem;
+    }
+}
